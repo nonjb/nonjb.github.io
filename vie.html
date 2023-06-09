@@ -553,6 +553,12 @@ input[type=checkbox]:checked::after{
 &nbsp
 <el-button onclick="firerate()">Đạn nhanh</el-button>
 
+&nbsp
+<el-button onclick="lock()">Aimlock</el-button>
+
+&nbsp
+<el-button onclick="tile()">Tỉ lệ headshot</el-button>
+
 <br><br>
 
 
@@ -987,7 +993,7 @@ h5gg.searchNumber('300000090', 'I32', '0x00000000', '0x2000000000');
 
 
 
-function firerate (){
+function firerate(){
 
 
 h5gg.clearResults();
@@ -997,6 +1003,34 @@ h5gg.searchNearby('40','F32', '0x64');
 h5gg.searchNumber('0.054','F32', '0x100000000', '0x200000000');
 h5gg.editAll('0.028','F32', '0x100000000', '0x200000000');
 
+
+
+}
+
+
+
+function lock(){
+
+
+h5gg.clearResults();
+h5gg.searchNumber('0.144','F32', '0x100000000', '0x180000000');
+h5gg.editAll('4','F32', '0x100000000',  '0x180000000');
+
+
+}
+
+
+function tile(){
+
+
+h5gg.clearResults();
+h5gg.searchNumber('0.144','F32', '0x100000000', '0x180000000');
+h5gg.editAll('0.3','F32', '0x100000000',  '0x180000000');
+h5gg.clearResults();
+h5gg.searchNumber('0.22','F32', '0x100000000', '0x200000000');
+h5gg.searchNearby('0.24','F32', '0x30');
+h5gg.searchNumber('0.22','F32', '0x100000000', '0x200000000');
+h5gg.editAll('0.8','F32', '0x100000000',  '0x120000000');
 
 
 }
