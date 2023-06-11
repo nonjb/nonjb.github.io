@@ -557,6 +557,10 @@ input[type=checkbox]:checked::after{
 
 &nbsp
 
+<el-button onclick="of()">Fly</el-button>
+
+&nbsp
+
 <br><br>
 
 
@@ -1004,6 +1008,13 @@ h5gg.searchNumber('0.245','F32', '0x100000000', '0x200000000');
 h5gg.editAll('-10','F32', '0x100000000', '0x200000000');
 
 }
+
+
+function of() {
+h5gg.clearResults();
+h5gg.searchNumber('0.245','F32', '0x100000000', '0x150000000');
+h5gg.editAll('5','F32', '0x100000000', '0x150000000');
+	 	}
 
 
 
