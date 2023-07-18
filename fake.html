@@ -8,8 +8,8 @@
 
 #bodyView{
 background-color: rgba(0,0,0,.40);
-height: 200px;
-width: 350px;
+height: 100%;
+width: 100%;
 position: fixed; 
 overflow: hidden;
 table-layout:fixed;
@@ -400,7 +400,7 @@ setWindowDrag(0,0,80,200);
                 y = Math.max(20, y);
                 height = Math.min(height, h-y);
             }
-            setWindowRect(x,y,350,200);
+            setWindowRect(x,y,width,height);
         });
 
 
