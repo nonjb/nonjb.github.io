@@ -576,9 +576,9 @@ Bật trong trận, mỗi trận bật 1 lần
 <input type="checkbox" onclick="brutal(this)">
 <span class="checkmark"></span>
 &nbsp
-<span>Magic brutal (MP)</span>
-&nbsp
-&nbsp<span>(đợi 5s)</span>
+<span>Magic VIP auto-headshot (MP)</span>
+<p>&nbsp
+&nbsp<span>(đợi 3-5s load code)</span>
 <p>
 &nbsp
 <label>
@@ -642,7 +642,13 @@ Bật trong trận, mỗi trận bật 1 lần
 <span class="checkmark"></span>
 &nbsp
 <span>Bắn xuyên tường (MP+BR)</span>
-
+<p>
+&nbsp
+<label>
+<input type="checkbox" onclick="bigbody(this)">
+<span class="checkmark"></span>
+&nbsp
+<span>Big body (MP)</span>
 
 </div>
 
@@ -1052,8 +1058,13 @@ function speed(e){
  
 h5gg.clearResults();   
 h5gg.searchNumber('4.28000020981','F32', '0x100000000', '0x200000000');
-h5gg.getResults('550', 'F32')
-      h5gg.editAll('7.28000020981', "F32");
+h5gg.searchNearby('4.28000020981', 'F32', '0x20');
+      h5gg.editAll('6', "F32");
+
+h5gg.clearResults();   
+h5gg.searchNumber('3.20000004768','F32', '0x100000000', '0x200000000');
+h5gg.searchNearby('3.20000004768', 'F32', '0x20');
+      h5gg.editAll('6', "F32");
     
 
     }
@@ -1101,7 +1112,11 @@ h5gg.clearResults();
 h5gg.searchNumber('7.5', 'F32', '0x00000000', '0x2000000000');
       h5gg.editAll('90', "F32");
 
+h5gg.clearResults();
+h5gg.searchNumber('6.50295305252', 'F32', '0x00000000', '0x2000000000');
+      h5gg.editAll('90', "F32");
     
+
     
     
 
@@ -1249,6 +1264,25 @@ h5gg.searchNearby('0.44999998808','F32', '0x100');
 
 }
 }
+
+function bigbody(e) {
+
+if (e.checked) {
+
+h5gg.clearResults();
+h5gg.searchNumber('60.0','F32', '0x100000000', '0x2000000000');
+h5gg.searchNearby('60.0','F32', '0x100');
+      h5gg.editAll('105', "F32");
+
+h5gg.clearResults();
+h5gg.searchNumber('180.0','F32', '0x100000000', '0x2000000000');
+h5gg.searchNearby('180.0','F32', '0x100');
+      h5gg.editAll('105', "F32");
+    
+
+}
+}
+
 
 
 
