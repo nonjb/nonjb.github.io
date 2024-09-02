@@ -1,15 +1,57 @@
-<script>import React, { useState } from 'react';
+<!DOCTYPE html>
 
-function Counter() {
-  const [count, setCount] = useState(0);
+<style>
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
+  /* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
-</script>
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 50%;
+}
+  body {
+    background-color: #f0f0f0;
+}
+  a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+}
+  
+  
+</style>
+
+<html>
+<head>
+    <title>Profile của bạn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Họ và tên</h1>
+        <p>Ngành nghề</p>
+        <p>Mô tả ngắn về bản thân</p>
+        <h2>Kỹ năng</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <h2>Dự án</h2>
+        <ul>
+            <li><a href="#">Dự án 1</a></li>
+            <li><a href="#">Dự án 2</a></li>
+        </ul>
+    </div>
+</body>
+</html>
